@@ -18,7 +18,6 @@ Try the site that is closest to you to minimize transmission times.
 =============================================================== =============================================================
 Site                                                            Address
 =============================================================== =============================================================
-SOEST, U. of Hawaii, USA                                        ftp://ftp.soest.hawaii.edu/gmt
 EarthByte Group, Sydney U, Australia                            https://www.earthbyte.org/webdav/gmt_mirror/gmt
 Lab for Satellite Altimetry, NOAA, USA                          ftp://ftp.star.nesdis.noaa.gov/pub/sod/lsa/gmt
 IRIS, Washington, USA                                           ftp://ftp.iris.washington.edu/pub/gmt
@@ -93,7 +92,7 @@ the GMT FTP site (~25 GB) and/or the GMT data server (~120 GB).
 
 To mirror the GMT FTP site, you can use `lftp <https://lftp.yar.ru/>`_::
 
-    lftp -e "mirror --delete --parallel=8 gmt gmt; bye" ftp.soest.hawaii.edu
+    lftp -e "mirror --delete --parallel=8 gmt gmt; bye" ftp://ftp.iris.washington.edu/pub/gmt
 
 To mirror the GMT data server, you can use the **rsync** command::
 
